@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Mapping</title>
+
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/highlight.dark.css">
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="https://danbjoseph.github.io/drones/">
+                Mapping
+                <small class="hidden-xs hidden-sm">
+                    with DIY drones
+                </small>
+            </a>
+
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                        <ul class="nav nav-pills nav-stacked">
+                                                            <li class="">
+                                    <a href="https://danbjoseph.github.io/drones/">
+                                        About
+                                    </a>
+                                </li>
+                                                            <li class="active">
+                                    <a href="https://danbjoseph.github.io/drones/build.html">
+                                        <i class="fa fa-fw fa-wrench"></i> Build
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://danbjoseph.github.io/drones/fly.html">
+                                        <i class="fa fa-fw fa-paper-plane"></i> Fly
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://danbjoseph.github.io/drones/map.html">
+                                        <i class="fa fa-fw fa-map"></i> Map
+                                    </a>
+                                </li>
+                                                    </ul>
+
+                    </nav>
+
+                
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h1 id="build">Build</h1>
+<h2 id="airframe">Airframe</h2>
+<h3 id="a-good-starting-point">A good starting point</h3>
+<p>Jumping straight into building a drone for mapping will likely be frustrating. I started with simple, scratch built &quot;foamies&quot; that lack any of the fancy electronics of a more advanced drone. <a href="https://www.flitetest.com/">Flite Test</a> has a ton of resources as well as a store where you can purchase kits to facilitate beginner build attempts. These simple builds will give you practice working with foamboard and flying with less time invested in each step (so the inevitable mistakes and failures will be less painful to recover from).</p>
+<p><img src="img/build/foamie1.jpg" alt="" /></p>
+<p>My Tiny Trainer and the <a href="https://www.youtube.com/watch?v=KJWg5HJBGGc"><i class="fa fa-fw fa-youtube-play" aria-hidden="true"></i> Flite Test build video</a> with additional links in the video description.</p>
+<p><img src="img/build/foamie2.jpg" alt="" /></p>
+<p>My FT Spear and the <a href="https://www.youtube.com/watch?v=B5dqMtpdbcU"><i class="fa fa-fw fa-youtube-play" aria-hidden="true"></i> Flite Test build video</a> with additional links in the video description.</p>
+<h3 id="first-attempts-at-a-drone-what-didnt-work">First attempts at a drone... what didn't work</h3>
+<p>My initial thoughts on airframe construction were to sandwich the electronics between protective layers of polycarbonate sheets held apart by screws. These attempts looked good but were simply too heavy and not aerodynamic enough. A couple of iterations of both a pusher design, with the propeller at the back of the main fuselage, and a standard orientation proved fruitless.</p>
+<p><img src="img/build/lexan.jpg" alt="" />
+<img src="img/build/purple1-internals.jpg" alt="" />
+<img src="img/build/purple1.jpeg" alt="" />
+<img src="img/build/blue1.jpg" alt="" /></p>
+<p>I've chosen to leave out the post &quot;flight&quot; pictures of these early attempts.</p>
+<h3 id="ansley-peace-drone-apd">Ansley Peace Drone (APD)</h3>
+<p>Ed of ExperimentalAirlines has designed a foamboard airframe dubbed the Ansley Peace Drone (APD). His Peace Drone XR and it's ability to push 2kg of total weight made me think it could easily fly with the electronics for mapping. And it certainly can. The version I constructed has a 3&quot; fuselage tube (30&quot; plus a 15&quot; extension) with the space for the camera at the front (replaced by a equivalently sized/weighted box during tests and practice flights) followed by the battery and then the Pixhawk and associated electronics.</p>
+<p><img src="img/build/apd-mapper-01.jpg" alt="" /></p>
+<p>The 30&quot; canard wing has a 7&quot; airfoil chord. The main wing is 60&quot; with a 7&quot; airfoil chord, 1.5&quot; control surface (with a 16&quot; gap in the control surface around the motor). The servos are 14&quot; from the center of the drone and 3&quot; forward of the control surfaces so they fit cleanly within the wing and the 1m center carbon spar extends past them.</p>
+<p><img src="img/build/wing01.jpg" alt="" />
+<img src="img/build/wing02.jpg" alt="" />
+<img src="img/build/wing03.jpg" alt="" />
+<img src="img/build/wing04.jpg" alt="" /></p>
+<p>The ExperimentalAirlines YouTube channel has videos that extensively cover every aspect of the construction.</p>
+<p><strong>Overview</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=lE_ArMYnoIM">Introduction <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=PFU00YWOF0c">Setup &amp; Breakdown <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=bCXtobFdeHY">Flight Video <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=5w_rL5bDULw">10 Ansley Peace Drones from around the world <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=FIY6SloFHFU">Peace Drone v2 <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=iOYaX6JWgd4">Peace Drone XR <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+</ul>
+<p><strong>Build</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=QWEGWaVc0go">Tapes for RC airplane construction <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=karr67ZYho4">Armin wing <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=UNqFnzmm0vI">Armin wing part 1 - tape covering foamboard <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=RgBSbnZh_KM">Armin wing part 2 - cutting, beveling, bending the airfoil <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=-z_mBiPw6z0">Armin wing part 3 - forming and gluing the wing <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=idnT5eP5Snw&amp;list=PLnq02DlEOkvaZY1r-atVFFX4UfHvEryrA">Armin wing part 4 - making the control surfaces <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=C7PO6I_Ypcg&amp;list=PLnq02DlEOkvaZY1r-atVFFX4UfHvEryrA">Armin wing part 5 - spar selection and planning <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=xfXEGyklLUU&amp;list=PLnq02DlEOkvaZY1r-atVFFX4UfHvEryrA">Armin wing part 6 - wing joining concepts <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=MhotIq8cJZA">Armin wing part 7 - servo installation <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=o_RA_SqgYSE&amp;list=PLnq02DlEOkvaZY1r-atVFFX4UfHvEryrA">Armin wing part 8 - wing tip caps and improved trailing edges <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=96dAMyt-hhg">Armin wing part 9 - two tone coloring <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=B0SbC7LpzcA">Stabilizers 1 - leading &amp; trailing edges <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=e1_pjhQWj98">Stabilizers 2 - control surface hinges <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=lWzd12P1beA">APD Canard wing <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=rWtYFYkyzj0">APD Main wing <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=LBFm08WwyTg">Foamboard fuselage tubes <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=Opyed-QttAo">APD fuselage construction <i class="fa fa-fw fa-youtube-play" ></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=42uuGA8i9yg">Fuselage tubes ideas and variations <i class="fa fa-fw fa-youtube-play" aria-hidden="true"></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=4zaX5wLmI2U">Building Techniques - hatches <i class="fa fa-fw fa-youtube-play" aria-hidden="true"></i></a></li>
+<li><a href="https://www.youtube.com/watch?v=JNWwgOYBfjs">Building Techniques - metal motor mounts <i class="fa fa-fw fa-youtube-play" aria-hidden="true"></i></a></li>
+</ul>
+<h3 id="airframe-tips-amp-tricks">Airframe tips &amp; tricks</h3>
+<ul>
+<li>Keep your working surface and measuring rule(s) clean of hot glue bits and other stuff as they can indent your wings</li>
+<li>When peeling paper off foamboard, go slowly and use a sharp knife point to prick up anytime it starts to stick and tear off incompletely</li>
+<li>For the winglet stabilizers, tape from trailing edge going forwards for the correct aerodynamic overlap</li>
+<li>When building the second segment of the main wing, to ensure a good match, begin checking alignment using the first wing segment when gluing in the first 2&quot; bottom piece (don't use just the 1&quot; spacer)</li>
+</ul>
+<h2 id="electronics-setup">Electronics setup</h2>
+<ul>
+<li>Bind the transmitter receiver to the transmitter and plug into the SPK/DSM port on the Pixhawk</li>
+</ul>
+<h3 id="electronics-tips-amp-tricks">Electronics tips &amp; tricks</h3>
+<ul>
+<li>Understanding <a href="http://www.rc-airplane-world.com/propeller-size.html">propeller size</a></li>
+<li>To center servos, you need to connect them to power and signal from a transmitter as the position of the cog may not be in it's neutral position which will result in the incorrect angle of attachment for the control arm</li>
+<li>Polarity of servo wires
+<ul>
+<li>White, orange, yellow, or black&amp;white (signal)</li>
+<li>Black or brown (-)</li>
+<li>Red (+)</li>
+</ul></li>
+<li>To change the direction the motor spins, switch two of the wires connecting the ESC to the motor</li>
+<li>Calibrate the ESC <a href="http://ardupilot.org/plane/docs/guide-esc-calibration.html#typical-esc-calibration"><i class="fa fa-fw fa-external-link"></i></a> (refer to the ESC manual for exact instructions, as the procedure may vary by brand/model)
+<ul>
+<li>If the ESC is not calibrated properly, it doesn't know what signal from the transmitter should be considered as &quot;no power&quot;</li>
+<li>Power off everything</li>
+<li>Turn on the transmitter, apply &quot;max throttle&quot; and keep it there</li>
+<li>Power up your ESC, it should beep in different manner (usually two short, high-pitch beeps)</li>
+<li>Reduce the throttle to &quot;0&quot; (zero)</li>
+<li>The ESC should confirm that with another set of short beeps.</li>
+</ul></li>
+</ul>
+<h2 id="software-setup">Software setup</h2>
+<ul>
+<li>Install mission planner <a href="http://ardupilot.org/plane/docs/common-install-mission-planner.html"><i class="fa fa-fw fa-external-link"></i></a></li>
+<li>Update the Ardupilot firmware on the Pixhawk flight controller</li>
+<li>Details on all parameters <a href="http://ardupilot.org/plane/docs/parameters.html"><i class="fa fa-fw fa-external-link"></i></a></li>
+<li>Parameters of note: <code>BATT_MONITOR</code>, <code>ARMING REQUIRE</code>, <code>ARSPD_FBW_MAX</code>, <code>ARSPD_FBW_MIN</code>, <code>BATTERY_CAPACITY</code></li>
+</ul>
+<h2 id="tuning">Tuning</h2>
+<ul>
+<li>Manually adjust the control surface throws <a href="https://www.rcairspace.com/2013/07/how-to-adjust-the-throws-on-your-control-surfaces/"><i class="fa fa-fw fa-external-link"></i></a>
+<ul>
+<li>On the servo arm
+<ul>
+<li>The hole that is closest to the spindle on the servo itself is the least throw</li>
+<li>The hole that is furthest away from the servo on the arm is the most throw</li>
+</ul></li>
+<li>On the control horn
+<ul>
+<li>The hole furthest away from your control surface has the least throw</li>
+<li>The hole that is closest to your control surface has the most throw</li>
+</ul></li>
+</ul></li>
+<li>Use Mission Planner to configure an <a href="http://ardupilot.org/plane/docs/guide-elevon-plane.html">elevon plane</a></li>
+<li>Ardupilot instructions for <a href="http://ardupilot.org/plane/docs/first-flight-landing-page.html">first flight</a></li>
+<li>Automatic tuning using <code>AUTOTUNE</code> mode <a href="http://ardupilot.org/plane/docs/automatic-tuning-with-autotune.html#"><i class="fa fa-fw fa-external-link"></i></a></li>
+</ul>
+<h2 id="future-directions">Future directions</h2>
+<ul>
+<li>Would be nice to have the camera oriented so that more ground to either side of the drone is captured and passes can be spaced farther apart while still achieving good sidelap for image stitching (right now the camera is sideways in the drone so the wider coverage is along the flight path and not to the sides)</li>
+<li>Would be nice to carry a better camera and have different ways of triggering it and recording when/where it captured images
+<ul>
+<li>QX1 triggering <a href="http://www.agrowing.com/qx1-triggering-with-pixhawk-part-1">with a Pixhawk</a></li>
+<li>Intel Edison camera trigger <a href="http://www.instructables.com/id/Intel-Edison-Smart-Camera-Trigger-for-pixhawk-base/">Instructable</a></li>
+<li>QX1 <a href="http://e4e.ucsd.edu/news-and-updates/sony-qx1-triggering">triggering</a></li>
+<li><a href="http://diydrones.com/forum/topics/triggering-a-camera-directly-from-pixhawk-apm">Wired camera trigger</a> direct from Pixhawk</li>
+<li>Sony QX1 and QX10 image capture by <a href="https://www.youtube.com/watch?v=43n_cQbvurg">Python program</a> over WiFi</li>
+<li>Using the intel edison as <a href="http://diydrones.com/profiles/blog/show?id=705844%3ABlogPost%3A2006143&amp;commentId=705844%3AComment%3A2006670&amp;xg_source=activity">smart camera controller</a></li>
+<li>Build a <a href="https://scribblesandsnaps.com/2015/02/22/build-a-raspberry-pi-based-cable-shutter-release-for-sony-cameras/">Raspberry Pi-Based cable shutter release</a> for Sony Cameras</li>
+<li>Camera remote release <a href="http://www.doc-diy.net/photo/remote_pinout/">pinout list</a></li>
+</ul></li>
+<li>Improve the airframe and build documentation</li>
+</ul>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Mapping</title>
+
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/highlight.dark.css">
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="https://danbjoseph.github.io/drones/">
+                Mapping
+                <small class="hidden-xs hidden-sm">
+                    with DIY drones
+                </small>
+            </a>
+
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                        <ul class="nav nav-pills nav-stacked">
+                                                            <li class="active">
+                                    <a href="https://danbjoseph.github.io/drones/">
+                                        About
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://danbjoseph.github.io/drones/build.html">
+                                        <i class="fa fa-fw fa-wrench"></i> Build
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://danbjoseph.github.io/drones/fly.html">
+                                        <i class="fa fa-fw fa-paper-plane"></i> Fly
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://danbjoseph.github.io/drones/map.html">
+                                        <i class="fa fa-fw fa-map"></i> Map
+                                    </a>
+                                </li>
+                                                    </ul>
+
+                    </nav>
+
+                
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h1 id="what-is-this-all-about">What is this all about?</h1>
+<p>I'm attempting to bring together various resources, document methods, and record my experiences building drones for the purpose of mapping. Right now I'm focused on fixed-wing designs but that doesn't mean I won't look at quadcopters (or hexacopters! or octocopters!) in the future. Vertical takeoff and landing designs (VTOLs) are also an airframe type I would love to explore. But one thing at a time.</p>
+<h3 id="diy">DIY</h3>
+<p>DIY is awesome. There can be cost savings associated with a DIY solution. You can adapt and build on a project to customize for specific applications and to improve it as the tech changes and new options, such as better sensors or batteries, become available.</p>
+<p>If you've built a drone yourself it becomes easier to troubleshoot in situations where it may not be practical, or even possible, to get custom service support from the vendor. Quick repairs may be possible, resulting in delays rather than permanent groundings when operating away from support infrastructure and systems.</p>
+<p>If you've built it yourself it's easier to practice flying. Rebuilding an airframe constructed largely from foamboard purchased at Dollar Tree is a lot easier then sending in a multi-thousand dollar drone for repairs by the company. Being able to control your drone manually is an important skill for emergency situations or in the event something goes wrong with a planned mission. And flying can be hard.</p>
+<p><img src="img/about/crash.jpg" alt="" /></p>
+<h3 id="mapping">Mapping?</h3>
+<p>Yes. It's beautiful to look at and drone imagery is awesome for mapping. There are tradeoffs, one of the biggest ones being the total area you can cover. But it's high resolution (easily 5cm or less), there are no clouds in the way, it's super recent, etc. Compare the two images below to get an idea.</p>
+<p><img src="img/about/imagery-compare_malalison.jpg" alt="" /></p>
+<h2 id="get-in-touch">Get in touch</h2>
+<p>Reach out. I'd love to learn what you've tried, what you think I should try, and anything else you might have to say.</p>
+<p><a href="https://twitter.com/danbjoseph"><i class="fa fa-fw fa-twitter"></i>@danbjoseph</a>
+| <a href="mailto:danbjoseph@gmail.com"><i class="fa fa-fw fa-envelope"></i> danbjoseph@gmail.com</a>
+| <a href="https://github.com/danbjoseph"><i class="fa fa-fw fa-github-alt"></i> danbjoseph</a></p>
+<h2 id="acknowledgement">Acknowledgement</h2>
+<p>Folks behind awesome, open source software projects mentioned within (and those not mentioned here) whom share the outputs of their labor and love with the rest of us.</p>
+<p>Ed, the guy behind ExperimentalAirlines, who has put an amazing amount of video resources up on his <a href="https://www.youtube.com/channel/UClkL_Hmktyh9R_FzwSPjXmA"><i class="fa fa-fw fa-youtube-play" aria-hidden="true"></i> YouTube channel</a>.</p>
+<p>My super supportive <a href="https://americanredcross.github.io/team/">team members</a> at Red Cross.</p>
+<p>The start of this work is tied a Master's capstone project at Penn State University. A big thank you to my advisor Dr. James O’Brian.</p>
+<p>And tons of others, who I will try to get around to calling out by name.</p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

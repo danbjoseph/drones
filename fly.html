@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Mapping</title>
+
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/highlight.dark.css">
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="https://danbjoseph.github.io/drones/">
+                Mapping
+                <small class="hidden-xs hidden-sm">
+                    with DIY drones
+                </small>
+            </a>
+
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                        <ul class="nav nav-pills nav-stacked">
+                                                            <li class="">
+                                    <a href="https://danbjoseph.github.io/drones/">
+                                        About
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://danbjoseph.github.io/drones/build.html">
+                                        <i class="fa fa-fw fa-wrench"></i> Build
+                                    </a>
+                                </li>
+                                                            <li class="active">
+                                    <a href="https://danbjoseph.github.io/drones/fly.html">
+                                        <i class="fa fa-fw fa-paper-plane"></i> Fly
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://danbjoseph.github.io/drones/map.html">
+                                        <i class="fa fa-fw fa-map"></i> Map
+                                    </a>
+                                </li>
+                                                    </ul>
+
+                    </nav>
+
+                
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h1 id="fly">Fly</h1>
+<h2 id="mission-preparation">Mission preparation</h2>
+<p>Steps for the day(s) prior to when you are planning to fly.</p>
+<ul>
+<li>Research the place you plan to fly
+<ul>
+<li>Know (and obey) any regulations, flight restrictions, etc.
+<ul>
+<li>Federal Aviation Adminstration (FAA) rules on UAS <a href="https://www.faa.gov/uas/"><i class="fa fa-fw fa-external-link"></i></a></li>
+<li>Academy of Model Aeronautics (AMA) <a href="http://www.modelaircraft.org/"><i class="fa fa-fw fa-external-link"></i></a></li>
+<li>Global drone regulations database  <a href="https://www.droneregulations.info/"><i class="fa fa-fw fa-external-link"></i></a></li>
+<li>USA aeronautical charts online  <a href="https://skyvector.com/"><i class="fa fa-fw fa-external-link"></i></a></li>
+<li>USA flight restrictions map <a href="https://app.airmap.io/"><i class="fa fa-fw fa-external-link"></i></a></li>
+</ul></li>
+<li>Note any hazards or risks such as power lines, cell towers, etc.</li>
+</ul></li>
+<li>Cache the basemap for the area in Mission Planner</li>
+<li>Charge laptop batteries, camera batteries, transmitter batteries</li>
+<li>Charge flight batteries
+<ul>
+<li><strong>Caution:</strong> inspect batteries for any bulging or damage, and do not use if bulging or damaged</li>
+<li><strong>Caution:</strong> never charge batteries unattended!</li>
+<li>Plug in your battery charger and add the XT-60 (or appropriate connector)
+<ul>
+<li>Caution: if you attached the battery to the connector first you risk creating sparks when plugging the leads in and damaging your charger</li>
+</ul></li>
+<li>Plug the battery's XT-60 and balancer into the charger</li>
+<li>Select <code>LiPo</code> and then <code>Balance charge</code> on the charger</li>
+<li>Press start and then set the amps
+<ul>
+<li>Charge the battery at a level appropriate (lower amps will be a slower charge but is better for the strength of the final charge and overall battery life)</li>
+</ul></li>
+<li>Press <code>start</code> again and set the number of cells (a 4S battery is 4 cells)</li>
+<li>Press and hold the <code>start</code> button, and the charger will check the battery</li>
+<li>Confirm the settings are correct and press <code>start</code> again to begin the charge</li>
+<li>Return batteries to storage level if more than a couple of days without use, check every month or so</li>
+</ul></li>
+<li>Pack everything for transport to flight location</li>
+</ul>
+<h2 id="pre-flight-checklist">Pre-flight checklist</h2>
+<ul>
+<li>Pilot safety
+<ul>
+<li>Remote Pilot in Command (PIC) preparedness</li>
+<li>Physically and mentally fit, no alcohol in previous 8 hours and BAC &lt;0.04 (12 hours bottle to throttle is a good guideline for pilots of manned aircraft as well as remote pilots flying drones)</li>
+<li>Good practice to have a visible observer</li>
+</ul></li>
+<li>Assemble the drone
+<ul>
+<li>Attach wings, tail, and connect servo wires</li>
+<li>Multiple rubber bands on wings</li>
+<li>Attach propeller
+<ul>
+<li><strong>Caution:</strong> always remove the propeller during any diagnostics or troubleshooting and never attach propellor unless you are ready to fly</li>
+<li>Numbers printed on the propeller should face forward</li>
+<li>Hold motor housing when tightening propeller nut</li>
+</ul></li>
+<li>Place battery</li>
+<li>Check center of gravity
+<ul>
+<li>Drone should be level or 5 degrees nose down at most (not tail down)</li>
+</ul></li>
+</ul></li>
+<li>Visual check
+<ul>
+<li>No visible damage</li>
+<li>Check all connections (electronic, control horns, servo linkages, and other physical)</li>
+<li>Control surfaces neutral</li>
+</ul></li>
+<li>Turn on GCS, connect the base station telemetry via USB, and open Mission Planner</li>
+<li>Power on transmitter
+<ul>
+<li><strong>Caution:</strong> make sure throttle is all the way down</li>
+</ul></li>
+<li>Plug in battery on drone
+<ul>
+<li>Make sure drone is flat and level</li>
+<li>Power on where you want the drone to loiter in RTL mode</li>
+<li>Pixhawk <a href="https://pixhawk.org/users/status_leds">Main LED</a> indicator
+<ul>
+<li>Solid any color: Armed</li>
+<li>Breathing any color: Standby</li>
+<li>Amber: Low battery or failsafe (e.g. return to home)</li>
+<li>Blue: GPS not locked</li>
+<li>Green: GPS locked</li>
+<li>Fast Blink &amp; Red: Arming error</li>
+<li>Blink &amp; Red: Other error</li>
+</ul></li>
+</ul></li>
+<li>Connect GCS to drone in Mission Planner</li>
+<li>Accelerometer calibration</li>
+<li>Compass calibration
+<ul>
+<li>Compass calibration may not be necessary if you have not travelled a great distance from the last flight location where the compass was calibrated (the Earth's magnetic field varies depending on your location relative to the poles)</li>
+<li>Check declination on GCS display, the red line emerging from the front of the drone icon should match the direction the physical drone is facing</li>
+</ul></li>
+<li>Check your pitch roll and yaw angle on the GCS HUD and verify that they match the rotation of the drone</li>
+<li>Check camera settings and test trigger camera manually</li>
+<li>Flight mode check
+<ul>
+<li><strong>Caution:</strong> check that drone is disarmed!</li>
+<li>Toggle flight mode switch and confirm on the display in Mission planner that the drone is switching between the desired modes (FBWA ←→ Auto ←→ RTL)</li>
+</ul></li>
+<li>Arm the drone by pressing and holding the arm button (the light changes to a solid from blinking)
+<ul>
+<li><strong>Caution:</strong> ensure drone is in FBWA and the transmitter is on with throttle all the way down!</li>
+<li><strong>Caution:</strong> if the drone is in Auto or RTL it will immediately start the propeller!</li>
+<li><strong>Caution:</strong> if the transmitter is off, a failsafe will likely switch the drone into RTL mode!</li>
+</ul></li>
+<li>RC Transmitter control check for elevon planes [or] 4-channel planes
+<ul>
+<li>Right stick forward: both elevons down [or] elevator down</li>
+<li>Right stick back: both elevons up [or] elevator up</li>
+<li>Right stick left: left elevon up, right elevon down [or] left aileron up, right aileron down</li>
+<li>Right stick right: left elevon down, right elevon up [or] left aileron down, right aileron up</li>
+<li>Left stick left: nothing [or] rudder left</li>
+<li>Left stick right: nothing [or] rudder right</li>
+<li>(<strong>Caution:</strong> with helper holding drone and well clear of propeller) Left stick forward: motor on full</li>
+<li>Left stick back: motor off</li>
+</ul></li>
+<li>FBWA response check for elevon planes [or] 4-channel planes
+<ul>
+<li>Roll drone left: left elevon down, right elevon up [or] left aileron down, right aileron up</li>
+<li>Roll drone right: left elevon up, right elevon down [or] left aileron up, right aileron down</li>
+<li>Pitch drone forward (nose down): both elevons up [or] elevator up</li>
+<li>Pitch drone back (nose up): both elevons down [or] elevator down</li>
+</ul></li>
+</ul>
+<h2 id="post-mission">Post Mission</h2>
+<ul>
+<li>Power off drone first, then transmitter and GCS</li>
+<li>Check your camera memory card</li>
+</ul>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>

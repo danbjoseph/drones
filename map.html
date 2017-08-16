@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Mapping</title>
+
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/highlight.dark.css">
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/main.css">
+    </head>
+    <body>
+
+        <header class="navbar navbar-default navbar-fixed-top">
+
+            <a class="navbar-brand" href="https://danbjoseph.github.io/drones/">
+                Mapping
+                <small class="hidden-xs hidden-sm">
+                    with DIY drones
+                </small>
+            </a>
+
+        </header>
+
+        <main class="container-fluid">
+            <div class="row">
+
+                
+                    <nav id="sidebar" class="col-sm-3 col-lg-2" role="navigation">
+
+                        <ul class="nav nav-pills nav-stacked">
+                                                            <li class="">
+                                    <a href="https://danbjoseph.github.io/drones/">
+                                        About
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://danbjoseph.github.io/drones/build.html">
+                                        <i class="fa fa-fw fa-wrench"></i> Build
+                                    </a>
+                                </li>
+                                                            <li class="">
+                                    <a href="https://danbjoseph.github.io/drones/fly.html">
+                                        <i class="fa fa-fw fa-paper-plane"></i> Fly
+                                    </a>
+                                </li>
+                                                            <li class="active">
+                                    <a href="https://danbjoseph.github.io/drones/map.html">
+                                        <i class="fa fa-fw fa-map"></i> Map
+                                    </a>
+                                </li>
+                                                    </ul>
+
+                    </nav>
+
+                
+                <section id="content" class="col-sm-offset-3 col-lg-offset-2 col-sm-9 col-lg-10">
+                    <h1 id="map">Map</h1>
+<h2 id="georeferencing-images">Georeferencing images</h2>
+<ul>
+<li>Mission Planner can geo-reference images <a href="http://ardupilot.org/planner/docs/common-geotagging-images-with-mission-planner.html"><i class="fa fa-fw fa-external-link"></i></a></li>
+<li>When geo-referencing images in Mission Planner, it will also try and include system files
+<ul>
+<li>If you copied images off the memory card using OSX you may end up with hidden files such as <code>._DSC0098.JPG</code> that will mess up the message count compared to file count</li>
+</ul></li>
+</ul>
+<h2 id="ground-control-points">Ground control points</h2>
+<p><img src="img/map/gcp.jpg" alt="" /></p>
+<h2 id="image-processing">Image processing</h2>
+<p><strong>OpenDroneMap (ODM)</strong> is an open source toolkit for processing aerial drone imagery.
+<a href="http://opendronemap.org/"><i class="fa fa-fw fa-external-link"></i></a>
+<a href="https://twitter.com/opendronemap"><i class="fa fa-fw fa-twitter"></i></a>
+<a href="https://github.com/OpenDroneMap/OpenDroneMap"><i class="fa fa-fw fa-github-alt"></i></a></p>
+<p><img src="img/map/odm.png" alt="" /></p>
+<p><strong>WebODM</strong> is a free, user-friendly, extendable application and API for drone image processing (it uses ODM for the processing).
+<a href="https://www.webodm.org/"><i class="fa fa-fw fa-external-link"></i></a>
+<a href="https://github.com/OpenDroneMap/WebODM"><i class="fa fa-fw fa-github-alt"></i></a></p>
+<p><img src="img/map/webodm.png" alt="" /></p>
+<p><strong>Portable OpenStreetMap (POSM)</strong> integrates best-of-breed tools from a variety of sources and developers on a single device that can be deployed to the field to facilitate mapping efforts, particularly when internet access is absent. It includes a version of ODM as well as an imagery API.
+<a href="http://posm.io/"><i class="fa fa-fw fa-external-link"></i></a>
+<a href="https://twitter.com/awesomeposm"><i class="fa fa-fw fa-twitter"></i></a>
+<a href="https://github.com/posm"><i class="fa fa-fw fa-github-alt"></i></a></p>
+<p><img src="img/map/posm.png" alt="" /></p>
+<hr />
+<h2 id="viewing">Viewing</h2>
+<p><strong>QGIS</strong> is a free and open source geographic information system that can be used for viewing and editing raster data such as the orthorectified imagery outputs from ODM.
+<a href="http://www.qgis.org/"><i class="fa fa-fw fa-external-link"></i></a>
+<a href="https://twitter.com/qgis"><i class="fa fa-fw fa-twitter"></i></a>
+<a href="https://github.com/qgis/"><i class="fa fa-fw fa-github-alt"></i></a></p>
+<p><img src="img/map/qgis.png" alt="" /></p>
+<hr />
+<h2 id="sharing">Sharing</h2>
+<p><strong>OpenAerialMap (OAM)</strong> is an open service to provide access to a commons of openly licensed imagery and map layer services. Anyone can download or contribute imagery to this growing commons of openly licensed imagery.
+<a href="https://openaerialmap.org/"><i class="fa fa-fw fa-external-link"></i></a>
+<a href="https://twitter.com/openaerialmap"><i class="fa fa-fw fa-twitter"></i></a>
+<a href="https://github.com/hotosm/OpenAerialMap"><i class="fa fa-fw fa-github-alt"></i></a></p>
+<p><img src="img/map/oam.png" alt="" /></p>
+<ul>
+<li>OAM will handle data in any CRS
+<ul>
+<li>The way to bundle the <code>*.tfw</code> and <code>*.prj</code>files is to use <code>gdal_translate</code> to write it out as a single file where that same data is included in the geotiff metadata (which may already be the case; try moving those sidecar files and run <code>gdalinfo</code> on the geotiff)</li>
+</ul></li>
+</ul>
+<hr />
+<h2 id="mapping">Mapping</h2>
+<p>OpenStreetMap (OSM) is built by a community of mappers that contribute and maintain data about roads, trails, buildings, transportation infrastructure, and much more, all over the world. Imagery hosted on OAM can be loaded as a base layer and used to trace features into OSM.
+<a href="https://www.openstreetmap.org"><i class="fa fa-fw fa-external-link"></i></a>
+<a href="https://twitter.com/openstreetmap"><i class="fa fa-fw fa-twitter"></i></a></p>
+<p><img src="img/map/osm.png" alt="" /></p>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- <footer>
+            <div class="container-fluid">
+                <p class="text-muted">
+                    website generated with <a href="http://couscous.io" title="Markdown website generator">Couscous</a>
+                </p>
+            </div>
+        </footer> -->
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script src="//yastatic.net/highlightjs/8.2/highlight.min.js"></script>
+
+        <script>
+            $(function() {
+                $("section>h1").wrap('<div class="page-header" />');
+                // Syntax highlighting
+                hljs.initHighlightingOnLoad();
+            });
+        </script>
+
+    </body>
+</html>
