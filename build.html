@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/highlight.dark.css">
         <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/main.css">
+        <link rel="stylesheet" href="https://danbjoseph.github.io/drones/css/custom.css">
     </head>
     <body>
 
@@ -122,7 +123,14 @@
 </ul>
 <h2 id="electronics-setup">Electronics setup</h2>
 <ul>
+<li>See the <a href="http://ardupilot.org/plane/docs/common-pixhawk-wiring-and-quick-start.html">Pixhawk Wiring Quick Start</a> documentation
+<ul>
 <li>Bind the transmitter receiver to the transmitter and plug into the SPK/DSM port on the Pixhawk</li>
+<li>Use a 6-wire cable to connect the telemetry module to the <code>TELEM 1</code> port on the Pixhawk</li>
+<li>Connect the ESC to the power module and the power module to the <code>POWER</code> port on the Pixhawk using a 6-wire cable</li>
+<li>Connect the GPS+compass to the <code>GPS</code> and <code>12C</code> ports on the Pixhawk</li>
+<li>Connect the safety switch button to the <code>SWITCH</code> port on the Pixhawk</li>
+</ul></li>
 </ul>
 <h3 id="electronics-tips-amp-tricks">Electronics tips &amp; tricks</h3>
 <ul>
@@ -171,6 +179,214 @@
 <li>Ardupilot instructions for <a href="http://ardupilot.org/plane/docs/first-flight-landing-page.html">first flight</a></li>
 <li>Automatic tuning using <code>AUTOTUNE</code> mode <a href="http://ardupilot.org/plane/docs/automatic-tuning-with-autotune.html#"><i class="fa fa-fw fa-external-link"></i></a></li>
 </ul>
+<h2 id="purchase-list">Purchase list</h2>
+<p>Including tools you should be able to purchase everything for just over $1,000 (not including a laptop for your GCS station).</p>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Cost</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Holybro PX4 2.4.6 &quot;Pixhawk&quot; Flight Controller Set, w/ M8N GPS, PM, OSD, Radio Telemetry (915Mhz)</td>
+<td>$204.00</td>
+<td>getfpv.com</td>
+</tr>
+<tr>
+<td>H-KING 50A Fixed Wing Brushless Speed Controller</td>
+<td>$18.98</td>
+<td><a href="https://hobbyking.com/en_us/h-king-50a-fixed-wing-brushless-speed-controller.html?___store=en_us">https://hobbyking.com/en_us/h-king-50a-fixed-wing-brushless-speed-controller.html?___store=en_us</a></td>
+</tr>
+<tr>
+<td>Turnigy Accucel-6 50W 6A Balancer Charger</td>
+<td>$44.90</td>
+<td><a href="https://www.amazon.com/gp/product/B00NUH5DU2/">https://www.amazon.com/gp/product/B00NUH5DU2/</a></td>
+</tr>
+<tr>
+<td>Adapter for Turnigy Accucel-6</td>
+<td>$15.99</td>
+<td><a href="https://www.amazon.com/gp/product/B00CJ26OSY/">https://www.amazon.com/gp/product/B00CJ26OSY/</a></td>
+</tr>
+<tr>
+<td>Multistar High Capacity 6600mAh 4S 10C</td>
+<td>$42.85</td>
+<td><a href="https://hobbyking.com/en_us/multistar-high-capacity-4s-6600mah-multi-rotor-lipo-pack-1.html?___store=en_us">https://hobbyking.com/en_us/multistar-high-capacity-4s-6600mah-multi-rotor-lipo-pack-1.html?___store=en_us</a></td>
+</tr>
+<tr>
+<td>T-MOTOR MT3515-9 KV-650</td>
+<td>$64.90</td>
+<td><a href="http://www.getfpv.com/tiger-motor-mt-3506-25-650kv.html">http://www.getfpv.com/tiger-motor-mt-3506-25-650kv.html</a></td>
+</tr>
+<tr>
+<td>12x8E prop</td>
+<td>$4.99</td>
+<td>local hobby shop</td>
+</tr>
+<tr>
+<td>DXe DSMX Transmitter</td>
+<td>$59.99</td>
+<td>Horizon Hobby</td>
+</tr>
+<tr>
+<td>DSMX Remote Receiver</td>
+<td>$34.99</td>
+<td>Horizon Hobby</td>
+</tr>
+<tr>
+<td>Tuffwing Canon precision geotag cable</td>
+<td>$39.95</td>
+<td><a href="http://www.tuffwing.com/store/store.html">http://www.tuffwing.com/store/store.html</a></td>
+</tr>
+<tr>
+<td>Tuffwing Pixhawk to Canon camera trigger cable</td>
+<td>$29.95</td>
+<td><a href="http://www.tuffwing.com/store/store.html">http://www.tuffwing.com/store/store.html</a></td>
+</tr>
+<tr>
+<td>Tuffwing shipping</td>
+<td>$6.95</td>
+<td><a href="http://www.tuffwing.com/store/store.html">http://www.tuffwing.com/store/store.html</a></td>
+</tr>
+<tr>
+<td>Canon S110 camera mount</td>
+<td>$34.95</td>
+<td><a href="http://www.tuffwing.com/store/store.html">http://www.tuffwing.com/store/store.html</a></td>
+</tr>
+<tr>
+<td>Canon S110</td>
+<td>$250.00</td>
+<td>Ebay</td>
+</tr>
+<tr>
+<td>2x HS-82MG micro MG servo</td>
+<td>$35.98</td>
+<td>local hobby shop</td>
+</tr>
+<tr>
+<td>Tape Brothers Carton Sealing Tape 2&quot; x 110 yds 2 mils, Purple</td>
+<td>$7.99</td>
+<td>Amazon</td>
+</tr>
+<tr>
+<td>clear packing tape (54.6 yards x 2&quot;)</td>
+<td>$7.99</td>
+<td>local hardware store</td>
+</tr>
+<tr>
+<td>duct tape 20yd</td>
+<td>$7.99</td>
+<td>local hardware store</td>
+</tr>
+<tr>
+<td>heavy-duty duct tape 20yd 3M</td>
+<td>$9.99</td>
+<td>local hardware store</td>
+</tr>
+<tr>
+<td>10x foamcore board</td>
+<td>$10.00</td>
+<td>Dollar Tree</td>
+</tr>
+<tr>
+<td>white styrene (0.030)</td>
+<td>$2.49</td>
+<td>local hobby shop</td>
+</tr>
+<tr>
+<td>pair nylon control horns</td>
+<td>$1.99</td>
+<td>local hobby shop</td>
+</tr>
+<tr>
+<td>Φ1.2mm x L180mm (7.1 inch) steel Z push rods (pack of 10)</td>
+<td>$7.99</td>
+<td>Amazon</td>
+</tr>
+<tr>
+<td>3&quot; 6&quot; 12&quot; 24&quot; Futaba style servo extension variety pack (4 each)</td>
+<td>$16.99</td>
+<td>Amazon</td>
+</tr>
+<tr>
+<td>6x carbon rod hollow 8mm OD x 6.5mm ID x 1m</td>
+<td>$58.80</td>
+<td><a href="http://www.radicalrc.com/category/Carbon-Rod-Hollow-410">http://www.radicalrc.com/category/Carbon-Rod-Hollow-410</a></td>
+</tr>
+<tr>
+<td>RadicalRC shipping (for min order of 6)</td>
+<td>$3.00</td>
+<td><a href="http://www.radicalrc.com/category/Carbon-Rod-Hollow-410">http://www.radicalrc.com/category/Carbon-Rod-Hollow-410</a></td>
+</tr>
+<tr>
+<td>Sponge window seal (1/4&quot; H x 1/2&quot; W x 10' L)</td>
+<td>$3.99</td>
+<td>local hardware store</td>
+</tr>
+<tr>
+<td>Velcro tape (15ft x 3/4 in, holds up to 2.2kg)</td>
+<td>$21.99</td>
+<td>local hardware store</td>
+</tr>
+<tr>
+<td>heavy duty, outdoor mounting tape</td>
+<td>$7.99</td>
+<td>local hardware store</td>
+</tr>
+<tr>
+<td>rubber bands</td>
+<td>$7.00</td>
+<td>local office supply store</td>
+</tr>
+<tr>
+<td>gorilla glue clear 1.75 oz</td>
+<td>$5.97</td>
+<td>local hardware store</td>
+</tr>
+<tr>
+<td>48&quot; aluminum straight edge</td>
+<td>$7.97</td>
+<td>local hardware store</td>
+</tr>
+<tr>
+<td>X-acto X3311 precision knife w/ 5 No.11 blades</td>
+<td>$4.89</td>
+<td>Amazon</td>
+</tr>
+<tr>
+<td>X-acto #2 Knife</td>
+<td>$5.90</td>
+<td>Amazon</td>
+</tr>
+<tr>
+<td>#2 blades 15-pack</td>
+<td>$7.32</td>
+<td>Amazon</td>
+</tr>
+<tr>
+<td>Adtech Pro200 Glue Gun (200 Watt)</td>
+<td>$28.00</td>
+<td>Flite Test</td>
+</tr>
+<tr>
+<td>Logan Foam Werks Foam Cutting Tool, Straight/Bevel</td>
+<td>$15.00</td>
+<td>Amazon</td>
+</tr>
+<tr>
+<td>Logan Foam Werks Foam Cutting Tool, Straight/Bevel</td>
+<td>$9.38</td>
+<td>Amazon</td>
+</tr>
+<tr>
+<td>5x 2in spring clamp</td>
+<td>$4.95</td>
+<td><a href="http://www.homedepot.com/p/HDX-2-in-Spring-Clamp-80002/100027346">http://www.homedepot.com/p/HDX-2-in-Spring-Clamp-80002/100027346</a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="future-directions">Future directions</h2>
 <ul>
 <li>Would be nice to have the camera oriented so that more ground to either side of the drone is captured and passes can be spaced farther apart while still achieving good sidelap for image stitching (right now the camera is sideways in the drone so the wider coverage is along the flight path and not to the sides)</li>
