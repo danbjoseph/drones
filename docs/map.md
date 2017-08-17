@@ -11,6 +11,7 @@ currentMenu: map
 
 ## Ground control points
 
+Identifiable features for which you have known (accurate) coordinates can be used to improve the georeferencing of your output. I've experimented with 1mx1m fabric banners with 12 unique designs. The waypoint averaging function of Garmin GPS62 hand-held units was used for the coordinate capture. It did provide improvements over the georeferencing results from the geo-tags of the individual pictures based on the location of the moving drone.
 
 ![](img/map/gcp.jpg)
 

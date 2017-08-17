@@ -79,7 +79,12 @@ The ExperimentalAirlines YouTube channel has videos that extensively cover every
 - When building the second segment of the main wing, to ensure a good match, begin checking alignment using the first wing segment when gluing in the first 2" bottom piece (don't use just the 1" spacer)
 
 ## Electronics setup
-- Bind the transmitter receiver to the transmitter and plug into the SPK/DSM port on the Pixhawk
+- See the [Pixhawk Wiring Quick Start](http://ardupilot.org/plane/docs/common-pixhawk-wiring-and-quick-start.html) documentation
+  - Bind the transmitter receiver to the transmitter and plug into the SPK/DSM port on the Pixhawk
+  - Use a 6-wire cable to connect the telemetry module to the `TELEM 1` port on the Pixhawk
+  - Connect the ESC to the power module and the power module to the `POWER` port on the Pixhawk using a 6-wire cable
+  - Connect the GPS+compass to the `GPS` and `12C` ports on the Pixhawk
+  - Connect the safety switch button to the `SWITCH` port on the Pixhawk
 
 ### Electronics tips & tricks
 - Understanding [propeller size](http://www.rc-airplane-world.com/propeller-size.html)
@@ -114,6 +119,51 @@ The ExperimentalAirlines YouTube channel has videos that extensively cover every
 - Use Mission Planner to configure an [elevon plane](http://ardupilot.org/plane/docs/guide-elevon-plane.html)
 - Ardupilot instructions for [first flight](http://ardupilot.org/plane/docs/first-flight-landing-page.html)
 - Automatic tuning using `AUTOTUNE` mode [<i class="fa fa-fw fa-external-link"></i>](http://ardupilot.org/plane/docs/automatic-tuning-with-autotune.html#)
+
+## Purchase list
+Including tools you should be able to purchase everything for just over $1,000 (not including a laptop for your GCS station).
+
+| Item        | Cost           | Source  |
+| ------------- |-------------| -----|
+| Holybro PX4 2.4.6 "Pixhawk" Flight Controller Set, w/ M8N GPS, PM, OSD, Radio Telemetry (915Mhz) | $204.00 | getfpv.com                                                                                                 |
+| H-KING 50A Fixed Wing Brushless Speed Controller                                                 | $18.98  | https://hobbyking.com/en_us/h-king-50a-fixed-wing-brushless-speed-controller.html?___store=en_us           |
+| Turnigy Accucel-6 50W 6A Balancer Charger                                                        | $44.90  | https://www.amazon.com/gp/product/B00NUH5DU2/                                                              |
+| Adapter for Turnigy Accucel-6                                                                    | $15.99  | https://www.amazon.com/gp/product/B00CJ26OSY/                                                              |
+| Multistar High Capacity 6600mAh 4S 10C                                                           | $42.85  | https://hobbyking.com/en_us/multistar-high-capacity-4s-6600mah-multi-rotor-lipo-pack-1.html?___store=en_us |
+| T-MOTOR MT3515-9 KV-650                                                                          | $64.90  | http://www.getfpv.com/tiger-motor-mt-3506-25-650kv.html                                                    |
+| 12x8E prop                                                                                       | $4.99   | local hobby shop                                                                                           |
+| DXe DSMX Transmitter |	$59.99 |	Horizon Hobby |
+| DSMX Remote Receiver |	$34.99 |	Horizon Hobby |
+| Tuffwing Canon precision geotag cable                                                            | $39.95  | http://www.tuffwing.com/store/store.html                                                                   |
+| Tuffwing Pixhawk to Canon camera trigger cable                                                   | $29.95  | http://www.tuffwing.com/store/store.html                                                                   |
+| Tuffwing shipping                                                                                | $6.95   | http://www.tuffwing.com/store/store.html                                                                   |
+| Canon S110 camera mount                                                                          | $34.95  | http://www.tuffwing.com/store/store.html                                                                   |
+| Canon S110                                                                                       | $250.00 | Ebay                                                                                                       |
+| 2x HS-82MG micro MG servo                                                                        | $35.98  | local hobby shop                                                                                           |
+| Tape Brothers Carton Sealing Tape 2" x 110 yds 2 mils, Purple                                    | $7.99   | Amazon                                                                                                     |
+| clear packing tape (54.6 yards x 2")                                                             | $7.99   | local hardware store                                                                                       |
+| duct tape 20yd                                                                                   | $7.99   | local hardware store                                                                                       |
+| heavy-duty duct tape 20yd 3M                                                                     | $9.99   | local hardware store                                                                                       |
+| 10x foamcore board                                                                               | $10.00  | Dollar Tree                                                                                                |
+| white styrene (0.030)                                                                            | $2.49   | local hobby shop                                                                                           |
+| pair nylon control horns                                                                         | $1.99   | local hobby shop                                                                                           |
+| Φ1.2mm x L180mm (7.1 inch) steel Z push rods (pack of 10)                                        | $7.99   | Amazon                                                                                                     |
+| 3" 6" 12" 24" Futaba style servo extension variety pack (4 each)                                 | $16.99  | Amazon                                                                                                     |
+| 6x carbon rod hollow 8mm OD x 6.5mm ID x 1m                                                      | $58.80  | http://www.radicalrc.com/category/Carbon-Rod-Hollow-410                                                    |
+| RadicalRC shipping (for min order of 6)                                                          | $3.00   | http://www.radicalrc.com/category/Carbon-Rod-Hollow-410                                                    |
+| Sponge window seal (1/4" H x 1/2" W x 10' L)                                                     | $3.99   | local hardware store                                                                                       |
+| Velcro tape (15ft x 3/4 in, holds up to 2.2kg)                                                   | $21.99  | local hardware store                                                                                       |
+| heavy duty, outdoor mounting tape                                                                | $7.99   | local hardware store                                                                                       |
+| rubber bands                                                                                     | $7.00   | local office supply store                                                                                  |
+| gorilla glue clear 1.75 oz                                                                       | $5.97   | local hardware store                                                                                       |
+| 48" aluminum straight edge                                                                       | $7.97   | local hardware store                                                                                       |
+| X-acto X3311 precision knife w/ 5 No.11 blades                                                   | $4.89   | Amazon                                                                                                     |
+| X-acto #2 Knife                                                                                  | $5.90   | Amazon                                                                                                     |
+| #2 blades 15-pack                                                                                | $7.32   | Amazon                                                                                                     |
+| Adtech Pro200 Glue Gun (200 Watt)                                                                | $28.00  | Flite Test                                                                                                 |
+| Logan Foam Werks Foam Cutting Tool, Straight/Bevel                                               | $15.00  | Amazon                                                                                                     |
+| Logan Foam Werks Foam Cutting Tool, Straight/Bevel                                               | $9.38   | Amazon                                                                                                     |
+| 5x 2in spring clamp                                                                              | $4.95   | http://www.homedepot.com/p/HDX-2-in-Spring-Clamp-80002/100027346                                           |
 
 ## Future directions
 - Would be nice to have the camera oriented so that more ground to either side of the drone is captured and passes can be spaced farther apart while still achieving good sidelap for image stitching (right now the camera is sideways in the drone so the wider coverage is along the flight path and not to the sides)

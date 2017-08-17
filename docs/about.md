@@ -4,7 +4,7 @@ currentMenu: about
 
 # What is this all about?
 
-I'm attempting to bring together various resources, document methods, and record my experiences building drones for the purpose of mapping. Right now I'm focused on fixed-wing designs but that doesn't mean I won't look at quadcopters (or hexacopters! or octocopters!) in the future. Vertical takeoff and landing designs (VTOLs) are also an airframe type I would love to explore. But one thing at a time.
+I'm attempting to bring together various resources, document methods, and record my experiences building drones for the purpose of mapping. Right now I'm focused on fixed-wing designs but that doesn't mean I won't look at quadcopters (or hexacopters! or octocopters!) in the future. Vertical takeoff and landing designs (VTOLs) are also an airframe type I would love to explore. But one thing at a time. This will be a frequently updated.
 
 ### DIY
 
@@ -18,7 +18,7 @@ If you've built it yourself it's easier to practice flying. Rebuilding an airfra
 
 ### Mapping?
 
-Yes. It's beautiful to look at and drone imagery is awesome for mapping. There are tradeoffs, one of the biggest ones being the total area you can cover. But it's high resolution (easily 5cm or less), there are no clouds in the way, it's super recent, etc. Compare the two images below to get an idea.
+Yes. It's beautiful to look at and drone imagery is awesome for mapping. There are tradeoffs, one of the biggest ones being the total area you can cover. But for small areas there is considerable less cost and logistics surrounding the use of a drone compared to manned aircraft or satellites. A drone can be launched on short notice, for instance to take advantage of breaks in inclement weather. The direct cost of a successful flight, assuming no accidents, is minimal; batteries need to be charged and there is some operational wear on the equipment. Drones are less likely to be affected by atmospheric conditions such as cloud cover. It is feasible to collect repeat imagery of an area over short time intervals. Drone imagery is high resolution (easily 5cm or less), there are no clouds in the way, it's super recent, etc. Compare the two images below to get an idea.
 
 ![](img/about/imagery-compare_malalison.jpg)
 

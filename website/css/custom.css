@@ -1,0 +1,3 @@
+th { border-bottom: 1px solid grey; }
+tr:nth-child(even) {background-color: #f2f2f2}
+th, td { padding: 6px; }
